@@ -3,7 +3,7 @@
 Lippolis, Saeedizade, Keskisärkkä, Zuppiroli, Ceriani, Gangemi, Blomqvist, Nuzzolese — ESWC 2025.
 
 - **Durée visée** : environ 19 min 40 s, démo comprise, ce qui laisse une marge sur les 20 minutes.
-- **Répartition** : l'orateur **A** présente le contexte et la solution, puis les forces, les limites et la conclusion. L'orateur **B** présente l'état de l'art, les résultats et la lecture critique sous l'angle des cours. La démo se fait à deux.
+- **Répartition** : l’orateur **A** (Lucas Lamiss) présente le contexte et la solution, puis les forces, les limites et la conclusion. L’orateur **B** (Bastien Teisseire) présente l'état de l'art, les résultats et la lecture critique sous l'angle des cours. La démo se fait à deux.
 - **Rythme** : environ 130 à 140 mots par minute. Le temps cumulé est indiqué entre crochets.
 - *En italique* : les gestes et indications de scène.
 
@@ -81,7 +81,7 @@ En **génération incrémentale**, toutes les CQ d'une story produisent une seul
 
 Les auteurs définissent trois notions qui serviront de mesures. Le **module minimal** est l'ontologie de référence réduite à ce qui sert à une CQ. Un **élément superflu** est une classe ou une propriété qu'aucune requête de test n'utilise. Un **problème mineur** signifie qu'il ne manque qu'une seule propriété pour que la CQ soit modélisée.
 
-Je passe la parole à [Nom 2] pour le positionnement et les résultats.
+Je passe la parole à Bastien pour le positionnement et les résultats.
 
 ---
 
@@ -173,7 +173,7 @@ Cinq : la **référence humaine** est faible. Ce sont des novices et non des exp
 
 Six : la **fuite et la reproductibilité**. Les stories sont en ligne depuis 2008, donc probablement dans les données d'entraînement. Et le dépôt ne contient pas le script de génération : le fichier de patrons qu'il référence est absent.
 
-Je repasse la parole à [Nom 2] pour la lecture sous l'angle de nos cours.
+Je repasse la parole à Bastien pour la lecture sous l'angle de nos cours.
 
 ### Slide 18 · Lecture RC et Web sémantique — B · 1:15 [15:25]
 

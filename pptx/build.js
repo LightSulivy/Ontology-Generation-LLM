@@ -123,7 +123,7 @@ section("Contexte et problématique");
     M, 5.75, 8.6, 0.65, { fontSize: 14, color: K.light });
   text(s, "ESWC 2025, Research Track (LNCS, pp. 321–341) · arXiv 2503.05388", M, 6.45, 8.6, 0.35,
     { fontSize: 12, color: K.softDark });
-  text(s, "[Nom 1] · [Nom 2]", W - M - 3.4, 6.1, 3.4, 0.45, { fontSize: 16, bold: true, color: K.orangeLt, align: "right" });
+  text(s, "Lucas Lamiss · Bastien Teisseire", W - M - 5, 5.1, 5, 0.45, { fontSize: 16, bold: true, color: K.orangeLt, align: "right" });
 }
 
 { // 2 — plan
