@@ -8,6 +8,7 @@ Article étudié : A. S. Lippolis, M. J. Saeedizade, R. Keskisärkkä, S. Zuppir
 
 | Chemin | Contenu |
 |---|---|
+| [presentation.pptx](presentation.pptx) | La présentation PowerPoint (21 slides, notes orales incluses). Régénérable avec `cd pptx && npm install && node build.js` |
 | [TEXTE_ORAL.md](TEXTE_ORAL.md) | Texte oral minuté, slide par slide (orateurs A et B), avec la préparation aux questions |
 | [deck/](deck/) | Sources des 21 slides (une section HTML par slide, notes dans `<aside>`). Version en ligne : https://claude.ai/artifact/WUEyr73hTjBzq2MRyExESb, exportable en PPTX ou PDF |
 | [demo/](demo/) | Démo Python : parsing Turtle, détection de P19 en SPARQL, inférence RDFS, cohérence avec HermiT, CQ verification. Voir [demo/README.md](demo/README.md) |
