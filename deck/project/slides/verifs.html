@@ -1,0 +1,30 @@
+<section id="verifs" data-transition="fade" style="background:#F6F4EE;color:#16233B;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;color:#B4551A;text-transform:uppercase;letter-spacing:3px;font-weight:600">05 · Regard critique · nos vérifications</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1">Nous avons repassé les 18 ontologies publiées</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:24px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:1px solid #DDD7C8;border-radius:16px;padding:36px">
+<p style="font-family:'Source Serif 4', Georgia, serif;font-size:88px;font-weight:600;line-height:1;color:#B4551A">3/18</p>
+<p style="font-size:26px;line-height:1.4">fichiers Turtle <b>invalides</b> : préfixes non déclarés (rdflib)</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:1px solid #DDD7C8;border-radius:16px;padding:36px">
+<p style="font-family:'Source Serif 4', Georgia, serif;font-size:88px;font-weight:600;line-height:1;color:#B4551A">14/15</p>
+<p style="font-size:26px;line-height:1.4">fichiers lisibles avec au moins un <b>P19</b> (requête SPARQL)</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#16233B;border-radius:16px;padding:36px">
+<p style="font-family:'Source Serif 4', Georgia, serif;font-size:88px;font-weight:600;line-height:1;color:#F0A15E">1/18</p>
+<p style="font-size:26px;line-height:1.4;color:#F6F4EE">ontologie acceptée par <b>HermiT</b>, donc en OWL 2 DL</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:1px solid #DDD7C8;border-radius:16px;padding:36px">
+<p style="font-family:'Source Serif 4', Georgia, serif;font-size:88px;font-weight:600;line-height:1;color:#B4551A">4 ≠ 0</p>
+<p style="font-size:26px;line-height:1.4">cas P19 dans le rapport OOPS! publié (Théâtre, Ontogenia, o1) contre 0 dans le Tableau 1</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border-left:6px solid #2C5F9E;padding:28px 36px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:26px;line-height:1.5">:hasStartDate rdfs:domain :Employment, :TimePeriod, :TimeInterval ;<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rdfs:range&#160; xsd:date, xsd:dateTime, xsd:gYear .</p>
+<p style="font-size:26px;line-height:1.4;color:#4A5568">Ontologie la mieux notée (100 % des CQ) : un contrat de travail est inféré comme une période, et aucune valeur ne satisfait les trois portées.</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6A7179">19 · rdflib 7, owlrl, HermiT via owlready2 · fichiers du dépôt dersuchendee/Onto-Generation</p>
+<aside>Orateur B. Nous avons vérifié les 18 ontologies de la génération incrémentale. Trois fichiers ne sont même pas du Turtle valide : il manque des déclarations de préfixes, ce que l’article signale par P37/P39. Sur les 15 fichiers lisibles, 14 ont au moins un P19, que nous détectons avec une requête SPARQL GROUP BY / HAVING. Un seul fichier sur 18 est accepté par HermiT, à cause des types de données et d’une propriété transitive sous cardinalité. Enfin, une incohérence : pour Théâtre avec Ontogenia et o1, le rapport OOPS! publié par les auteurs liste 4 cas de P19, alors que le Tableau 1 affiche 0 pour cette colonne, cumulée sur les trois stories. Probablement une erreur de report. En bas, l’exemple concret, tiré de l’ontologie classée première : hasStartDate a trois domaines et trois portées incompatibles.</aside>
+</section>

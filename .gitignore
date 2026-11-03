@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+# sorties de la démo --live
+demo/live_*.ttl
+# texte intégral extrait du PDF de l'article (non redistribué)
+work/

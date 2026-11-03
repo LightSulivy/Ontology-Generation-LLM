@@ -1,0 +1,21 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-11-03T16:00:00Z"},
+  "lists": "css",
+  "title": "Ontology Generation using LLMs — étude d’article",
+  "cover": "cover",
+  "order": ["cover", "plan", "probleme", "notions", "questions", "techniques", "comparaison", "generation", "etat-art", "protocole", "res-couverture", "res-oops", "res-superflus", "res-experts", "statement", "forces", "limites", "kr-ws", "verifs", "demo", "conclusion"],
+  "sections": {
+    "s1": {"description": "Contexte et problématique", "start": "cover"},
+    "s2": {"description": "La solution proposée", "start": "techniques"},
+    "s3": {"description": "Positionnement par rapport à l’état de l’art", "start": "etat-art"},
+    "s4": {"description": "Protocole et résultats d’évaluation", "start": "protocole"},
+    "s5": {"description": "Regard critique, démo et conclusion", "start": "statement"}
+  },
+  "faces": {
+    "source-serif-4": {"family": "Source Serif 4", "href": "https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400..700;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap"},
+    "ibm-plex-sans": {"family": "IBM Plex Sans", "href": "https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400..700;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap"},
+    "jetbrains-mono": {"family": "JetBrains Mono", "href": "https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400..700;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap"}
+  },
+  "designSystems": []
+}

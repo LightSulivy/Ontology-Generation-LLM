@@ -1,0 +1,21 @@
+<section id="res-oops" data-transition="fade" style="background:#F6F4EE;color:#16233B;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;color:#B4551A;text-transform:uppercase;letter-spacing:3px;font-weight:600">04 · Résultats · OOPS!</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1">P19 domine : domaines et portées multiples</h2>
+</div>
+<table style="font-size:26px;color:#16233B;border:1px solid #DDD7C8;background:#FFFDF8">
+<tr style="background:#16233B"><th style="width:30%;color:#F6F4EE;text-align:left">Pitfall critique</th><th style="width:10%;color:#F6F4EE;text-align:right">CQbyCQ GPT-4</th><th style="width:10%;color:#F6F4EE;text-align:right">Mem. GPT-4</th><th style="width:10%;color:#F6F4EE;text-align:right">Mem. Llama</th><th style="width:10%;color:#F6F4EE;text-align:right">Mem. o1</th><th style="width:10%;color:#F6F4EE;text-align:right">Onto. GPT-4</th><th style="width:10%;color:#F6F4EE;text-align:right">Onto. Llama</th><th style="width:10%;color:#F6F4EE;text-align:right">Onto. o1</th></tr>
+<tr><td>P05 Inverses erronées</td><td>0</td><td>1</td><td>25</td><td>0</td><td>2</td><td>7</td><td>5</td></tr>
+<tr style="background:#F1EEE5"><td>P06 Cycles de hiérarchie</td><td>0</td><td>0</td><td>2</td><td>0</td><td>5</td><td>0</td><td>11</td></tr>
+<tr><td><b>P19 Domaines / portées multiples</b></td><td>0</td><td>23</td><td>32</td><td>1</td><td>4</td><td>15</td><td>0</td></tr>
+<tr style="background:#F1EEE5"><td>P29 Transitivité erronée</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>P37 Ontologie indisponible</td><td>3</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr style="background:#F1EEE5"><td>P39 Espace de noms ambigu</td><td>3</td><td>2</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+</table>
+<div style="display:flex;gap:32px;align-items:start">
+<p style="flex:1;font-size:28px;line-height:1.4;color:#4A5568">Plusieurs <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#16233B">rdfs:domain</span> = <b style="color:#16233B">conjonction</b>, équivalente à <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#16233B">owl:intersectionOf</span> : inférences non voulues, voire incohérence.</p>
+<p style="width:560px;font-size:26px;line-height:1.4;background:#F7E7D9;border-radius:12px;padding:24px 28px">o1 a le moins de pitfalls avec Memoryless ; Llama le plus, avec les deux prompts.</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6A7179">12 · Tableau 1 · cumul sur les 3 stories · CQbyCQ évalué avec GPT-4 seulement</p>
+<aside>Orateur B. Deuxième angle : le scanner OOPS!, en ne gardant que les pitfalls critiques. Le plus fréquent est P19, des domaines ou portées multiples. C’est une notion centrale du cours de M1 : en RDFS comme en OWL, deux rdfs:domain ne signifient pas « l’un ou l’autre » mais « les deux à la fois ». Une propriété qui a pour domaine Employment et TimePeriod fait de tout sujet une instance des deux classes. Llama cumule le plus de problèmes ; o1 avec Memoryless en a le moins. Gardez en tête la colonne Ontogenia o1 et son 0 pour P19 : nous y reviendrons dans nos vérifications.</aside>
+</section>

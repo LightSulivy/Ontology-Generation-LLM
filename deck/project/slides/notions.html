@@ -1,0 +1,26 @@
+<section id="notions" data-transition="fade" style="background:#F6F4EE;color:#16233B;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;color:#B4551A;text-transform:uppercase;letter-spacing:3px;font-weight:600">01 · Problématique</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1">Les besoins s’expriment comme en eXtreme Design</h2>
+</div>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:1px solid #DDD7C8;border-radius:16px;padding:40px">
+<h3 style="font-size:32px;font-weight:600;color:#2C5F9E">User story</h3>
+<p style="font-size:26px;line-height:1.45;color:#4A5568">Récit du domaine, en langue naturelle.</p>
+<p style="font-family:'Source Serif 4', Georgia, serif;font-size:26px;line-height:1.45;font-style:italic">« Fabio Bianchi is an Italian actor employed at the theatre since May 2004… »</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:1px solid #DDD7C8;border-radius:16px;padding:40px">
+<h3 style="font-size:32px;font-weight:600;color:#2C5F9E">Question de compétence</h3>
+<p style="font-size:26px;line-height:1.45;color:#4A5568">Ce à quoi l’ontologie doit permettre de répondre.</p>
+<p style="font-family:'Source Serif 4', Georgia, serif;font-size:26px;line-height:1.45;font-style:italic">« At what time did a certain actor start working for a specific theatre? »</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:1px solid #DDD7C8;border-radius:16px;padding:40px">
+<h3 style="font-size:32px;font-weight:600;color:#2C5F9E">CQ verification</h3>
+<p style="font-size:26px;line-height:1.45;color:#4A5568">Une CQ est « modélisée » si l’on peut écrire la requête SPARQL qui y répond.</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;line-height:1.45">?e a :Employment ;<br>&#160;&#160;:hasEmployee ?a ;<br>&#160;&#160;:hasStartDate ?d .</p>
+</div>
+</div>
+<p style="font-size:28px;line-height:1.4;color:#4A5568">Quatre catégories de CQ : <b style="color:#16233B">propriété de données</b>, <b style="color:#16233B">propriété d’objet</b> (simples), <b style="color:#16233B">réification</b> (relation n-aire, souvent datée) et <b style="color:#16233B">restriction</b> (cardinalité, quantificateur).</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6A7179">4 · Notions · exemple tiré de l’histoire « Theatre » du jeu de données</p>
+<aside>Orateur A. Trois notions à poser. La user story est un récit du domaine. Les questions de compétence, ou CQ, sont les questions auxquelles l’ontologie doit permettre de répondre. Et la CQ verification, issue des travaux de Blomqvist en 2012 : une CQ est modélisée si l’ontologie contient tous les éléments nécessaires pour écrire la requête SPARQL de test, sans juger de la qualité de la modélisation. Les auteurs classent les CQ en quatre catégories ; la plus fréquente, et de loin, est la « réification » : en fait des relations n-aires, par exemple qui joue quel rôle dans quelle production à quel moment.</aside>
+</section>

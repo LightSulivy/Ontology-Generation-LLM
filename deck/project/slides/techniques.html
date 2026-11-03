@@ -1,0 +1,34 @@
+<section id="techniques" data-transition="fade" style="background:#F6F4EE;color:#16233B;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;color:#B4551A;text-transform:uppercase;letter-spacing:3px;font-weight:600">02 · Solution</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1">Deux techniques de prompting, une CQ à la fois</h2>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px;background:#FFFDF8;border:1px solid #DDD7C8;border-radius:16px;padding:36px 40px">
+<p style="font-size:32px;font-weight:600;color:#2C5F9E">Memoryless CQbyCQ <span style="color:#4A5568">· décomposition, sans mémoire</span></p>
+<div style="display:flex;align-items:center;gap:20px">
+<p style="font-size:26px;background:#E3ECF7;border-radius:12px;padding:16px 24px;width:330px">User story + CQ i</p>
+<x-shape kind="arrow-right" style="background:#2C5F9E;width:56px;height:28px"></x-shape>
+<p style="font-size:26px;background:#E3ECF7;border-radius:12px;padding:16px 24px;width:370px">LLM : persona, Turtle, pièges à éviter</p>
+<x-shape kind="arrow-right" style="background:#2C5F9E;width:56px;height:28px"></x-shape>
+<p style="font-size:26px;background:#E3ECF7;border-radius:12px;padding:16px 24px;width:200px">OWL i</p>
+<x-shape kind="arrow-right" style="background:#2C5F9E;width:56px;height:28px"></x-shape>
+<p style="font-size:26px;background:#2C5F9E;color:#F6F4EE;border-radius:12px;padding:16px 24px;flex:1">Fusion finale des n fichiers</p>
+</div>
+<p style="font-size:24px;color:#4A5568">Le modèle ne voit ni les autres CQ ni l’ontologie en cours : contexte réduit d’environ 60 %.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px;background:#FFFDF8;border:1px solid #DDD7C8;border-radius:16px;padding:36px 40px">
+<p style="font-size:32px;font-weight:600;color:#B4551A">Ontogenia <span style="color:#4A5568">· prompting métacognitif + eXtreme Design</span></p>
+<div style="display:flex;align-items:center;gap:20px">
+<p style="font-size:26px;background:#F7E7D9;border-radius:12px;padding:16px 24px;width:330px">Story + CQ i + ODP + ontologie courante</p>
+<x-shape kind="arrow-right" style="background:#B4551A;width:56px;height:28px"></x-shape>
+<p style="font-size:26px;background:#F7E7D9;border-radius:12px;padding:16px 24px;width:370px">LLM : procédure en 9 étapes</p>
+<x-shape kind="arrow-right" style="background:#B4551A;width:56px;height:28px"></x-shape>
+<p style="font-size:26px;background:#F7E7D9;border-radius:12px;padding:16px 24px;width:200px">OWL 1…i</p>
+<x-shape kind="arrow-right" style="background:#B4551A;width:56px;height:28px"></x-shape>
+<p style="font-size:26px;background:#B4551A;color:#F6F4EE;border-radius:12px;padding:16px 24px;flex:1">Réinjecté pour CQ i+1</p>
+</div>
+<p style="font-size:24px;color:#4A5568">Analyser, décomposer, sous-classes, restrictions, valider, tester avec des individus.</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6A7179">6 · D’après la Fig. 1 de l’article · prompts dans le dépôt dersuchendee/Onto-Generation</p>
+<aside>Orateur A. Voici les deux contributions. Elles découpent toutes les deux le problème CQ par CQ. Memoryless CQbyCQ reprend la technique CQbyCQ de Saeedizade et Blomqvist (ESWC 2024) en supprimant la mémoire : chaque CQ est modélisée isolément, avec la story, un persona d’ontologue, une explication de Turtle et une liste de pièges à éviter. On fusionne à la fin. L’idée : un long contexte distrait le modèle, et des chevauchements entre morceaux se corrigent plus facilement que des incohérences. Ontogenia, en bas, reprend un poster ESWC 2024. Elle applique le prompting métacognitif de Wang et Zhao (comprendre, juger, critiquer, confirmer, évaluer sa confiance) à la méthode eXtreme Design : on injecte des Ontology Design Patterns, et l’ontologie produite à l’étape i revient dans le prompt de l’étape suivante.</aside>
+</section>
